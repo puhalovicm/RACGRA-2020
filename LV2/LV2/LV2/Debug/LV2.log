@@ -1,0 +1,24 @@
+﻿  lab.cpp
+c:\racgra\lv\lv2\lv2\lv2\lab.cpp(201): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv2\lv2\lv2\lab.cpp(202): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv2\lv2\lv2\lab.cpp(204): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv2\lv2\lv2\lab.cpp(205): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv2\lv2\lv2\lab.cpp(223): warning C4244: '-=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\racgra\lv\lv2\lv2\lv2\lab.cpp(245): warning C4244: '-=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\racgra\lv\lv2\lv2\lv2\lab.cpp(382): warning C4101: 'modelview': unreferenced local variable
+c:\racgra\lv\lv2\lv2\lv2\lab.cpp(383): warning C4101: 'projection': unreferenced local variable
+c:\racgra\lv\lv2\lv2\lv2\lab.cpp(384): warning C4101: 'j': unreferenced local variable
+c:\racgra\lv\lv2\lv2\lv2\lab.cpp(384): warning C4101: 'i': unreferenced local variable
+  LV2.vcxproj -> C:\RACGRA\LV\LV2\LV2\Debug\LV2.exe
+  C:\IRG\IRG\Biblioteke\glew-1.13.0\bin\Release\Win32\glew32.dll
+  1 File(s) copied
+  C:\IRG\IRG\Biblioteke\freeglut-2.8.1\lib\x86\Debug\freeglut.dll
+  1 File(s) copied

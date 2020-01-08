@@ -1,0 +1,44 @@
+﻿  lab.cpp
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(65): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(129): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(154): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(155): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(156): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(157): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(182): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(183): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(184): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(185): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(233): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(234): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(302): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(303): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(320): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(327): warning C4305: '/=': truncation from 'double' to 'float'
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(337): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(337): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(351): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(392): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(392): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(395): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(397): warning C4305: '*=': truncation from 'double' to 'float'
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(399): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(402): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(446): warning C4244: 'initializing': conversion from 'const _Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(447): warning C4244: 'initializing': conversion from 'const _Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(450): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(450): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\racgra\lv\lv3\lv3\lv3\lab.cpp(451): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  LV3.vcxproj -> C:\RACGRA\LV\LV3\LV3\Debug\LV3.exe
+  C:\IRG\IRG\Biblioteke\glew-1.13.0\bin\Release\Win32\glew32.dll
+  1 File(s) copied
+  C:\IRG\IRG\Biblioteke\freeglut-2.8.1\lib\x86\Debug\freeglut.dll
+  1 File(s) copied

@@ -1,0 +1,31 @@
+﻿  zadatak.cpp
+c:\racgra\lv\lv1\lv1\zadatak.cpp(93): warning C4018: '<': signed/unsigned mismatch
+c:\racgra\lv\lv1\lv1\zadatak.cpp(213): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv1\lv1\zadatak.cpp(214): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv1\lv1\zadatak.cpp(216): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv1\lv1\zadatak.cpp(217): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\racgra\lv\lv1\lv1\zadatak.cpp(246): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\racgra\lv\lv1\lv1\zadatak.cpp(253): warning C4018: '<': signed/unsigned mismatch
+c:\racgra\lv\lv1\lv1\zadatak.cpp(254): warning C4244: 'argument': conversion from 'T' to 'const unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\racgra\lv\lv1\lv1\zadatak.cpp(255): warning C4244: 'argument': conversion from 'T' to 'const unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\racgra\lv\lv1\lv1\zadatak.cpp(256): warning C4244: 'argument': conversion from 'T' to 'const unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\racgra\lv\lv1\lv1\zadatak.cpp(344): warning C4305: '-=': truncation from 'double' to 'float'
+c:\racgra\lv\lv1\lv1\zadatak.cpp(356): warning C4305: '+=': truncation from 'double' to 'float'
+c:\racgra\lv\lv1\lv1\zadatak.cpp(427): warning C4305: '+=': truncation from 'double' to 'float'
+  LV1.vcxproj -> C:\RACGRA\LV\LV1\Debug\LV1.exe
+  C:\IRG\IRG\Biblioteke\glew-1.13.0\bin\Release\Win32\glew32.dll
+  1 File(s) copied
+  C:\IRG\IRG\Biblioteke\freeglut-2.8.1\lib\x86\Debug\freeglut.dll
+  1 File(s) copied
