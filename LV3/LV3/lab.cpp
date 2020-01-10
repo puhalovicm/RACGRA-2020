@@ -19,11 +19,12 @@
 #define PI 3.14
 #define IX(x, y) ((x) + (y) * N)
 
-int iter = 2; 
-int N = 225;
-float SCALE = 3;
-int velocityMultiplier = 600;
-int densityAmount = 50;
+int iter = 16;
+int N = 128;
+float SCALE = 4;
+int velocityMultiplier = 100;
+int candleVelocitiy = 1000;
+int densityAmount = 40;
 int velocityConstraint = 1000;
 int mouseXlast = 0;
 int mouseYlast = 0;
@@ -135,6 +136,7 @@ static void advect(int b, float *d, float *d0, float *velocX, float *velocY, flo
 			tmp1 = dtx * velocX[IX(i, j)];
 			tmp2 = dty * velocY[IX(i, j)];
 			x = ifloat - tmp1;
+			x = ifloat - tmp1;
 			y = jfloat - tmp2;
 
 			if (x < 0.5f) x = 0.5f;
@@ -191,9 +193,9 @@ static void drawCandle(int x, int y, int w, int h) {
 	int wickWidth = 1;
 
 	glColor3f(0.5f, 0.5f, 0.5f);
-	drawRect(x - wickWidth / 2, 
-		y - wickHeight, 
-		wickWidth, 
+	drawRect(x - wickWidth / 2,
+		y - wickHeight,
+		wickWidth,
 		wickHeight);
 
 	glColor3f(0.5f, 0.01f, 0.01f);
@@ -203,9 +205,9 @@ static void drawCandle(int x, int y, int w, int h) {
 		flameSize);
 
 	glColor3f(0.5f, 0.35f, 0.05f);
-	drawRect(x - w / 2, 
-		y - h, 
-		w - wickWidth, 
+	drawRect(x - w / 2,
+		y - h,
+		w - wickWidth,
 		h - wickHeight);
 }
 
@@ -266,7 +268,7 @@ public:
 		int index = IX(x, y);
 		if (!checkIndex(index)) {
 			return;
-		}		
+		}
 		this->Vx[index] += amountX;
 		this->Vy[index] += amountY;
 	}
@@ -314,7 +316,7 @@ public:
 					glColor3f(d, 0, 0);
 					break;
 				case 'w':
-				default: 
+				default:
 					glColor3f(d, d, d);
 				}
 				drawRect(x, y, SCALE, SCALE);
@@ -371,11 +373,11 @@ void myReshape(int w, int h)
 
 	glViewport(0, 0, w, h);
 
-	glMatrixMode(GL_PROJECTION);		
-	glLoadIdentity();					
-	gluOrtho2D(0, w, 0, h); 	
-	glMatrixMode(GL_MODELVIEW);			
-	glLoadIdentity();					
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluOrtho2D(0, w, 0, h);
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
 }
 
 void OnDraw()
@@ -389,14 +391,14 @@ void OnDraw()
 	fluid.fadeD();
 
 	if (mode == 0) {
-		fluid.addDensity(mouseXlast / SCALE, N - mouseYlast / SCALE, rand() % densityAmount/2);
+		fluid.addDensity(mouseXlast / SCALE, N - mouseYlast / SCALE, rand() % densityAmount / 2);
 
 		for (int i = 0; i < 2; i++) {
 			float angle = rand() % 100;
 			angle /= 100;
 			angle *= PI;
 
-			fluid.addVelocity(mouseXlast / SCALE, N - mouseYlast / SCALE, velocityMultiplier * cos(angle), velocityMultiplier * sin(angle));
+			fluid.addVelocity(mouseXlast / SCALE, N - mouseYlast / SCALE, candleVelocitiy * cos(angle), candleVelocitiy * sin(angle));
 		}
 
 		drawCandle(mouseXlast, N * SCALE - mouseYlast, candleWidth, candleHeight);
@@ -409,7 +411,7 @@ void OnDraw()
 void myKeyboard(unsigned char theKey, int mouseX, int mouseY)
 {
 	switch (theKey) {
-	case '1':
+	case 'm':
 		mode = 1 - mode;
 		break;
 	case 'b':
@@ -430,8 +432,8 @@ void myKeyboard(unsigned char theKey, int mouseX, int mouseY)
 }
 
 void timer(int value) {
-	glutPostRedisplay();      
-	glutTimerFunc(refreshMills, timer, 0); 
+	glutPostRedisplay();
+	glutTimerFunc(refreshMills, timer, 0);
 }
 
 void passiveMouse(int x, int y)
@@ -451,11 +453,14 @@ void passiveMouse(int x, int y)
 		fluid.addVelocity(x / SCALE, N - y / SCALE, amountX, amountY);
 	}
 	mouseXlast = x;
-	mouseYlast = y;	
+	mouseYlast = y;
 	glutPostRedisplay();
 }
 
 void onMouseButton(int button, int state, int x, int y)
 {
 	click = true;
+
+	mouseXlast = x;
+	mouseYlast = y;
 }
